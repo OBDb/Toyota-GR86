@@ -1,2 +1,19 @@
-{ "commands": []
+{ "commands": [
+{ "hdr": "750", "eax": "2A", "fcm1": true, "cmd": {"21": "15"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_TP_2_FL",    "path": "Tires", "fmt": {           "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "GR86_TP_2_FR",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "GR86_TP_2_RL",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "GR86_TP_2_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "rearRightTirePressure"},
+    {"id": "GR86_TP_2_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure"}
+  ]},
+{ "hdr": "750", "eax": "2A", "fcm1": true, "cmd": {"21": "30"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_TP_FL",    "path": "Tires", "fmt": {           "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "GR86_TP_FR",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "GR86_TP_RL",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "GR86_TP_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "rearRightTirePressure"},
+    {"id": "GR86_TP_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure"}
+  ]}
+]
 }
