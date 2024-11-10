@@ -10,27 +10,6 @@ The Toyota GR86 has gone through two main generations, with the second being a s
 
 - **Second Generation (2021-present)**: Rebranded as the GR86 under Toyota's Gazoo Racing lineup, the second generation brought significant improvements while maintaining the spirit of the original. Key changes include a larger 2.4L boxer engine producing 228 hp, improved chassis rigidity, and updated styling while keeping the fundamental front-engine, rear-wheel-drive layout. This generation features enhanced interior quality and modernized technology features. [[Toyota GR86 Official Page]](https://www.toyota.com/gr86/)
 
-## Repository Structure
-
-The directory is organized as follows:
-
-```plaintext
-signalsets/
-  └── v3/
-      ├── default.json        # Default configuration (applies to Second Generation and future models)
-      └── 2012-2020.json      # Override configuration for First Generation (2012-2020)
-```
-
-- **default.json**: Acts as the primary configuration file, covering models from 2021 onwards (Second Generation). This file will serve as the default fallback for any years not specified by an override file.
-
-- **2012-2020.json**: A specific configuration override for First Generation models (2012-2020), differentiating these years from the baseline configuration in `default.json`.
-
-If a new generation is introduced in the future, a new JSON file (e.g., `2021-2027.json`) can be created to lock in the second-generation configuration, allowing `default.json` to reflect the latest specifications.
-
-## Usage
-
-Each JSON file in the `v3/` directory corresponds to a specific model year range. This structure enables compatibility with various vehicle parameters and generations. If new versions of the Toyota GR86 are released, they can be easily integrated by adding new JSON files, e.g., `2028+.json`.
-
 ## Related resources
 
 - https://github.com/timurrrr/RaceChronoDiyBleDevice/blob/master/can_db/ft86_gen2.md
