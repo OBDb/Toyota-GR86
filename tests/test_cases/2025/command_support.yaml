@@ -55,5 +55,7 @@ supported_commands_by_ecu:
   - 7E0.0105:ECT
   - 7E0.0131:CLR_DIST
 unsupported_commands_by_ecu:
+  "750":
+  - 750.2130|e=2A,fc=1:GR86_TP_FL,GR86_TP_FR,GR86_TP_RL,GR86_TP_RR,GR86_TP_SPARE
   "7E0":
   - 7E0.0134:LAMBDA11_CURRENT,O2S11_CURRENT
