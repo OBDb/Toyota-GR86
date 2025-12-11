@@ -61,6 +61,7 @@ supported_commands_by_ecu:
   - 7E0.012F:FLI
   - 7E0.0131:CLR_DIST
   - 7E0.0134:LAMBDA11_CURRENT,O2S11_CURRENT
+  - 7E0.014E:CLR_TIME
   - 7E0.015C:EOT
   - 7E0.01A6:ODO
 unsupported_commands_by_ecu:
