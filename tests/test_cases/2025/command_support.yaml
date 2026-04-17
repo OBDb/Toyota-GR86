@@ -94,6 +94,9 @@ supported_commands_by_ecu:
   - 015A:APP_R
   - 015C:EOT
   - 01A6:ODO
+  - 7E6.7EE.0105
+  - 7E6.7EE.010D
+  - 7E6.7EE.015C
   "7E7":
   - 0105:ECT
   - 010B:MAP
