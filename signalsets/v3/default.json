@@ -1,4 +1,8 @@
 { "commands": [
+{ "hdr": "746", "dbg": true, "cmd": {"22": "1032"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_STEER_ANGLE_746", "path": "Control", "fmt": { "len": 8, "max": 635, "min": -640, "mul": 5, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle, v2"}
+  ]},
 { "hdr": "750", "eax": "2A", "fcm1": true, "dbg": true, "cmd": {"21": "15"}, "freq": 5,
   "signals": [
     {"id": "GR86_TP_2_FL",    "path": "Tires", "fmt": {           "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"},
@@ -14,6 +18,500 @@
     {"id": "GR86_TP_RL",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "rearLeftTirePressure"},
     {"id": "GR86_TP_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure", "suggestedMetric": "rearRightTirePressure"},
     {"id": "GR86_TP_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "unknown" }, "name": "Front left tire pressure"}
+  ]},
+{ "hdr": "750", "rax": "758", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": true, "cmd": {"21": "16"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_TT_RL",    "path": "Tires", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Rear left tire temperature"},
+    {"id": "GR86_TT_FR",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Front right tire temperature"},
+    {"id": "GR86_TT_FL",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Front left tire temperature"},
+    {"id": "GR86_TT_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Rear right tire temperature"},
+    {"id": "GR86_TT_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Spare tire temperature"}
+  ]},
+{ "hdr": "753", "rax": "75B", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1022"}, "freq": 15,
+  "signals": [
+    {"id": "GR86_TP_RL_2", "path": "Tires", "fmt": {           "len": 8, "max": 51, "div": 5, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "GR86_TP_RR_2", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 51, "div": 5, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
+    {"id": "GR86_TP_FR_2", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 51, "div": 5, "nullmin": 0, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "GR86_TP_FL_2", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 51, "div": 5, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "753", "rax": "75B", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1028"}, "freq": 3600,
+  "signals": [
+    {"id": "GR86_TID1", "path": "Tires", "fmt": {           "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Tire 1 id"},
+    {"id": "GR86_TID2", "path": "Tires", "fmt": {"bix": 24, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Tire 2 id"},
+    {"id": "GR86_TID3", "path": "Tires", "fmt": {"bix": 48, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Tire 3 id"},
+    {"id": "GR86_TID4", "path": "Tires", "fmt": {"bix": 72, "len": 24, "max": 16777215, "unit": "scalar" }, "name": "Tire 4 id"}
+  ]},
+{ "hdr": "7A2", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1135"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_12V_C", "path": "Battery", "fmt": { "len": 8, "max": 127, "min": -128, "add": -128, "unit": "milliamps" }, "name": "12V battery current"}
+  ]},
+{ "hdr": "7A2", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1136"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_12V_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "12V battery temperature"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "0005"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "0023"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_FRP", "path": "Fuel", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Fuel rail pressure"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10A1"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_MAF_VOLTAGE", "path": "Battery", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Mass airflow sensor voltage"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10A4"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_FUEL_INJECTOR_2_PULSE_WIDTH", "path": "Fuel", "fmt": { "len": 8, "max": 65.28, "div": 3.90625, "unit": "milliseconds" }, "name": "Fuel injector #2 pulse width"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10A5"}, "freq": 30,
+  "signals": [
+    {"id": "GR86_ODO_7A2_10A5", "path": "Trips", "fmt": { "len": 16, "max": 131070, "mul": 2, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10A6"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_ACC_POS", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10AB"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_RADIATOR_FAN", "path": "ECU", "fmt": { "len": 8, "max": 200, "unit": "percent" }, "name": "Radiator fan control"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10AE"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CPC_VALVE_DUTY_CYCLE", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Canister purge control valve duty cycle"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B1"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EGR_STEPS", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Exhaust gas recirculation steps"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B2"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ALTERNATOR_DUTY", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Alternator duty"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B3"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_FUEL_PUMP_DUTY", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel pump duty"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B4"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_INTAKE_VVT_ADVANCE_RIGHT", "path": "ECU", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Intake VVT advance angle right"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B5"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_INTAKE_VVT_ADVANCE_LEFT", "path": "ECU", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Intake VVT advance angle left"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B6"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_OCV_DUTY_RIGHT", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Oil control valve duty right"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10B7"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_OCV_DUTY_LEFT", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Oil control valve duty left"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10BE"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_A_F_SENSOR_1", "path": "ECU", "fmt": { "len": 8, "max": 1.99, "mul": 1.99, "div": 255, "unit": "scalar" }, "name": "A/F sensor #1"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10DE"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_THROTTLE_MOTOR_DUTY", "path": "ECU", "fmt": { "len": 8, "max": 99.92, "min": -100, "mul": 0.784, "add": -100, "unit": "percent" }, "name": "Throttle motor duty"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10E3"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CRUISE_VSS_T", "path": "Cruise control", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise speed, set"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10E5"}, "freq": 30,
+  "signals": [
+    {"id": "GR86_ODO_7A2_10E5", "path": "Trips", "fmt": { "len": 16, "max": 131070, "mul": 2, "nullmax": 131070, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10E6"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_FUEL_TANK_AIR_PRESSURE", "path": "Fuel", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "unknown" }, "name": "Fuel tank air pressure"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10E8"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_OSV_DUTY_RIGHT", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Oil supply value, duty right"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10E9"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_OSV_DUTY_LEFT", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Oil supply value, duty left"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10EE"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EXHAUST_OCV_DUTY_RIGHT", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Exhaust OCV duty right"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "10EF"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EXHAUST_OCV_DUTY_LEFT", "path": "ECU", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Exhaust OCV duty left"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "110B"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ROUGHNESS_MONITOR_1", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Roughness monitor #1"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "110C"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ROUGHNESS_MONITOR_2", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Roughness monitor #2"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "110D"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ROUGHNESS_MONITOR_3", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Roughness monitor #3"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "110E"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ROUGHNESS_MONITOR_4", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Roughness monitor #4"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1118"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_TARGET_INTAKE_MANIFOLD_PRESSURE", "path": "ECU", "fmt": { "len": 8, "max": 50, "unit": "kilopascal" }, "name": "Target intake manifold pressure"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "111B"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EGR_TARGET_VALVE_OPENING_ANGLE", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust gas recirculation target valve opening angle"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "111C"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EGR_VALVE_OPENING_ANGLE", "path": "ECU", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust gas recirculation valve opening angle"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "111F"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_INLET_AIR_T_AFTER_AIR_FILTER", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Inlet air temperature, after air filter"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1121"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_TARGET_ENGINE_SPEED", "path": "Movement", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Target engine speed"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "112C"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_INTERIOR_HEATER", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Interior heater"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "114B"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_ESTIMATED_CATALYST_T", "path": "Engine", "fmt": { "len": 8, "max": 1235, "min": -40, "mul": 5, "add": -40, "unit": "celsius" }, "name": "Estimated catalyst temperature"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1155"}, "freq": 30,
+  "signals": [
+    {"id": "GR86_ESTIMATED_DIST_OIL", "path": "Trips", "fmt": { "len": 8, "max": 25500, "mul": 100, "unit": "kilometers" }, "name": "Estimated distance to oil change"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "11D0"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_KNOCKING_SIGNAL", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "degrees" }, "name": "Knocking signal"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "122F"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CLUTCH_SWITCH", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Clutch switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1230"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_STOP_LIGHT_SWITCH", "path": "Lights", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Stop light switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1231"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CC_SET_COAST_SWITCH", "path": "Cruise control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Cruise control set/coast switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1232"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CC_RESUME_ACCELERATE_SWITCH", "path": "Cruise control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Cruise control resume/accelerate switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1233"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_BRAKE_SWITCH", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1234"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CC_MAIN_TOGGLE_SWITCH", "path": "Cruise control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Cruise control main toggle switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "124A"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_CC_CANCEL_SWITCH", "path": "Cruise control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Cruise control cancel switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "124C"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_OIL_LEVEL_SWITCH", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Oil level switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1251"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_SUB_FUEL_PUMP_RELAY_SWITCH", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Sub fuel pump relay switch"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "129C"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ENGINE_STARTING_TIME", "path": "ECU", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "milliseconds" }, "name": "Engine starting time"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "12ED"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_MAF_AVG", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "gramsPerSecond" }, "name": "Mass air flow, average"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1314"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_MONITOR_1", "path": "ECU", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Cylinder monitor #1"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1315"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_MONITOR_2", "path": "ECU", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Cylinder monitor #2"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1316"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_MONITOR_3", "path": "ECU", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Cylinder monitor #3"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1317"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_MONITOR_4", "path": "ECU", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Cylinder monitor #4"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1321"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_BAT_TERMINAL_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Battery terminal voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1322"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_BAT_CHARGE_DISCHARGE_CURRENT", "path": "Battery", "fmt": { "len": 32, "max": 4292967, "min": -2000, "mul": 10, "div": 10000, "add": -2000, "unit": "amps" }, "name": "Battery charge/discharge current"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1323"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_ESTIMATED_BAT_T", "path": "Battery", "fmt": { "len": 16, "max": 32727.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Estimated battery temperature"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "1324"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_REMAINING_BAT_CAPACITY", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "Remaining battery capacity", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "7A2", "rax": "7AA", "dbg": true, "cmd": {"22": "307A"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_INLET_AIR_T", "path": "Engine", "fmt": { "len": 8, "max": 300, "min": -30, "mul": 1.8, "add": -40, "unit": "fahrenheit" }, "name": "Inlet air temperature"}
+  ]},
+{ "hdr": "7A3", "rax": "7AB", "dbg": true, "cmd": {"22": "10C8"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_LOCK_UP_DUTY_RATIO", "path": "ECU", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "percent" }, "name": "Lock up duty ratio"}
+  ]},
+{ "hdr": "7A3", "rax": "7AB", "dbg": true, "cmd": {"22": "10CB"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_TURBINE_SPEED", "path": "Movement", "fmt": { "len": 8, "max": 8160, "mul": 32, "unit": "rpm" }, "name": "Turbine speed"}
+  ]},
+{ "hdr": "7A3", "rax": "7AB", "dbg": true, "cmd": {"22": "10D2"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_TCM_ATF_T", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "03"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_TIRE_RL_SPD", "path": "Movement", "fmt": {           "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "GR86_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "GR86_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "GR86_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "47"}, "freq": 0.25, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "GR86_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
+    {"id": "GR86_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
+    {"id": "GR86_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,    "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate"},
+    {"id": "GR86_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276.7, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1024"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_FR_VSS", "path": "Tires", "fmt": { "len": 16, "max": 3686, "mul": 562.5, "div": 10000, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1025"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_FL_VSS", "path": "Tires", "fmt": { "len": 16, "max": 3686, "mul": 562.5, "div": 10000, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1026"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_RR_VSS", "path": "Tires", "fmt": { "len": 16, "max": 3686, "mul": 562.5, "div": 10000, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1027"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_RL_VSS", "path": "Tires", "fmt": { "len": 16, "max": 3686, "mul": 562.5, "div": 10000, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "1029"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_STEER_ANGLE_7B0", "path": "Control", "fmt": { "len": 16, "max": 32767, "min": -32767, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
+  ]},
+{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "29"}, "freq": 1, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "GR86_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "liters" }, "name": "Fuel level, volume", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_EOT", "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "21"}, "freq": 5, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "GR86_CC_SPD", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "51"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_PREV_TRIP_DST", "path": "Trips",  "fmt": {"bix": 40, "len": 16, "max": 655.35,             "div": 100,             "unit": "kilometers" }, "name": "Previous trip distance"},
+    {"id": "GR86_VVTOT",         "path": "Engine", "fmt": {"bix": 56, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Variable valve timing oil temperature"},
+    {"id": "GR86_EOT_7E0",       "path": "Engine", "fmt": {"bix": 72, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0005"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_ECT_7E0", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "002F"}, "freq": 30,
+  "signals": [
+    {"id": "GR86_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "101E"}, "freq": 3600,
+  "signals": [
+    {"id": "GR86_TRIP_CNT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Trip counter"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10A3"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_FUEL_INJ_1_WIDTH", "path": "Fuel", "fmt": { "len": 8, "max": 65.28, "mul": 32, "div": 125, "unit": "milliseconds" }, "name": "Fuel injection 1 pulse width"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "tmo": "64", "fcm1": true, "cmd": {"22": "10E5"}, "freq": 30, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "GR86_ODO", "path": "Trips", "fmt": { "len": 16, "max": 131070, "mul": 2, "nullmax": 131070, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10E7"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_EOT_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10EC"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EXH_VVT_RETARD_ANG", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust VVT retard angle right"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10ED"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EXH_VVT_RETARD_ANG_LEFT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust VVT retard angle left"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1155"}, "freq": 30,
+  "signals": [
+    {"id": "GR86_ESTIMATED_DIST_OIL_CHANGE", "path": "Trips", "fmt": { "len": 8, "max": 25500, "mul": 100, "unit": "kilometers" }, "name": "Estimated distance to oil change"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11BE"}, "freq": 3600,
+  "signals": [
+    {"id": "GR86_INT_VVT_CLEANING", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Intake VVT cleaning self-recovery counter"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11BF"}, "freq": 3600,
+  "signals": [
+    {"id": "GR86_EXH_VVT_CLEANING", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Exhaust VVT cleaning self-recovery counter"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "122F"}, "freq": 0.25, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "GR86_CLUTCH_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Clutch pedal position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1233"}, "freq": 0.25, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "GR86_BRAKE_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Brake pedal position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1275"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_THROTTLE_MOTOR_V", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 2, "div": 25, "unit": "volts" }, "name": "Throttle motor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1276"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_SUB_THROTTLE_SENS", "path": "Engine", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Sub throttle sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1277"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_MAIN_THROTTLE_SENS", "path": "Engine", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Main throttle sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1278"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_SUB_ACCEL_SENS", "path": "Movement", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Sub accelerator sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1279"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_MAIN_ACCEL_SENS", "path": "Movement", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Main accelerator sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1289"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_IDLE_MAF", "path": "Engine", "fmt": { "len": 16, "max": 655, "div": 100, "unit": "gramsPerSecond" }, "name": "Idle mass air flow"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128A"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_IDLE_MAF_FEEDBACK", "path": "Engine", "fmt": { "len": 16, "max": 355, "min": -300, "div": 100, "add": -300, "unit": "gramsPerSecond" }, "name": "Idle mass air flow feedback correction"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128B"}, "freq": 3600,
+  "signals": [
+    {"id": "GR86_IDLE_SPD_CTRL", "path": "Engine", "fmt": { "len": 16, "max": 355, "min": -300, "div": 100, "add": -300, "unit": "gramsPerSecond" }, "name": "Idle speed control learning value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128C"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_IDLE_AC_LOAD_CORR", "path": "Engine", "fmt": { "len": 8, "max": 2.55, "div": 100, "unit": "gramsPerSecond" }, "name": "Idle A/C load correction"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128D"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_ELEC_LOAD_FEEDBACK", "path": "Engine", "fmt": { "len": 8, "max": 2.55, "div": 100, "unit": "gramsPerSecond" }, "name": "Electric load feedback value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128E"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_IDLE_DIRTY_THROTTLE", "path": "Engine", "fmt": { "len": 16, "max": 355, "min": -300, "div": 100, "add": -300, "unit": "gramsPerSecond" }, "name": "Idle dirty throttle correction"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128F"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_INT_VVT_ADVANCE_TGT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Intake VVT advance, target angle right"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1290"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_INT_VVT_ADVANCE_TGT_ANG", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Intake VVT advance, target angle left"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1291"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EXH_VVT_RETARD_TGT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust VVT retard, target angle right"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1292"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_EXH_VVT_RETARD_TGT_ANG", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust VVT retard, target angle left"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1295"}, "freq": 3600,
+  "signals": [
+    {"id": "GR86_PURGE_DENSITY_LEARN", "path": "Engine", "fmt": { "len": 8, "max": 99.1999, "min": -100, "mul": 332, "div": 425, "add": -100, "unit": "percent" }, "name": "Purge density learn value"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1298"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_TRANS_TURBINE_SPD", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "rpm" }, "name": "Transmission turbine speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1299"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_TRANS_LOCK_UP", "path": "Engine", "fmt": { "len": 8, "max": 100, "unit": "percent" }, "name": "Transmission lock-up"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12CE"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_AMBIENT_T_SENS_SIG", "path": "Engine", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Ambient temperature for sensor signal"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "12D1"}, "freq": 5,
+  "signals": [
+    {"id": "GR86_AMBIENT_T_CTRL", "path": "Engine", "fmt": { "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Ambient temperature for control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1352"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_SPLIT_RAT_FUEL_INJ_1", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Split ratio of fuel injection 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1353"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_SPLIT_RAT_FUEL_INJ_2", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Split ratio of fuel injection 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1354"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_SPLIT_RAT_FUEL_INJ_3", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Split ratio of fuel injection 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1355"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_SPLIT_RAT_FUEL_INJ_4", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Split ratio of fuel injection 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1357"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_DIRECT_FUEL_INJ_TIME_1", "path": "Fuel", "fmt": { "len": 16, "max": 262.14, "div": 250, "unit": "milliseconds" }, "name": "Direct fuel injection time 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1358"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_DIRECT_FUEL_INJ_TIME_2", "path": "Fuel", "fmt": { "len": 16, "max": 262.14, "div": 250, "unit": "milliseconds" }, "name": "Direct fuel injection time 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1359"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_DIRECT_FUEL_INJ_TIME_3", "path": "Fuel", "fmt": { "len": 16, "max": 262.14, "div": 250, "unit": "milliseconds" }, "name": "Direct fuel injection time 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "135A"}, "freq": 1,
+  "signals": [
+    {"id": "GR86_DIRECT_FUEL_INJ_TIME_4", "path": "Fuel", "fmt": { "len": 16, "max": 262.14, "div": 250, "unit": "milliseconds" }, "name": "Direct fuel injection time 4"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "1067"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_CVT_TURBINE_RPM", "path": "Transmission", "fmt": { "len": 8, "max": 8160, "mul": 32, "unit": "rpm" }, "name": "Turbine speed"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "11CB"}, "freq": 0.25,
+  "signals": [
+    {"id": "GR86_TURBINE_REVOLUTION", "path": "Movement", "fmt": { "len": 16, "max": 2097120, "mul": 32, "unit": "rpm" }, "name": "Turbine revolution speed"}
   ]}
 ]
 }
