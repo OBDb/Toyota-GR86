@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.2212ED
+test_cases:
+- expected_values:
+    GR86_MAF_AVG: 9.16
+  response: 7AA056212ED0394

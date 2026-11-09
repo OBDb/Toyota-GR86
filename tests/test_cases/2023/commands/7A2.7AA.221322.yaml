@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.221322
+test_cases:
+- expected_values:
+    GR86_BAT_CHARGE_DISCHARGE_CURRENT: 4.065
+  response: 7AA07621322001E9461

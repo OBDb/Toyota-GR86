@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.2210B2
+test_cases:
+- expected_values:
+    GR86_ALTERNATOR_DUTY: 75
+  response: 7AA046210B24B

@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.2210B6
+test_cases:
+- expected_values:
+    GR86_OCV_DUTY_RIGHT: 55.68627
+  response: 7AA046210B68E

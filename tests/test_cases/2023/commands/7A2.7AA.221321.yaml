@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.221321
+test_cases:
+- expected_values:
+    GR86_BAT_TERMINAL_VOLTAGE: 14.346
+  response: 7AA05621321380A
