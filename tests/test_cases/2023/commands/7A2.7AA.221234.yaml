@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.221234
+test_cases:
+- expected_values:
+    GR86_CC_MAIN_TOGGLE_SWITCH: 0
+  response: 7AA0462123400

@@ -1,0 +1,5 @@
+command_id: 7A2.7AA.2210AB
+test_cases:
+- expected_values:
+    GR86_RADIATOR_FAN: 0
+  response: 7AA046210AB00
