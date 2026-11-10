@@ -16,5 +16,17 @@ test_cases:
     GR86_REMAINING_BAT_CAPACITY: 98.8
   response: 7AA0562132403DC
 - expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 99.4
+  response: 7AA0562132403E2
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 99.5
+  response: 7AA0562132403E3
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 99.6
+  response: 7AA0562132403E4
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 99.7
+  response: 7AA0562132403E5
+- expected_values:
     GR86_REMAINING_BAT_CAPACITY: 100
   response: 7AA0562132403E8
