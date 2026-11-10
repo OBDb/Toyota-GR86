@@ -1,5 +1,20 @@
 command_id: 7A2.7AA.221324
 test_cases:
 - expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 83.2
+  response: 7AA056213240340
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 83.3
+  response: 7AA056213240341
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 83.4
+  response: 7AA056213240342
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 83.5
+  response: 7AA056213240343
+- expected_values:
     GR86_REMAINING_BAT_CAPACITY: 98.8
   response: 7AA0562132403DC
+- expected_values:
+    GR86_REMAINING_BAT_CAPACITY: 100
+  response: 7AA0562132403E8
