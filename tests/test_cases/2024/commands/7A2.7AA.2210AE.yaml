@@ -1,0 +1,14 @@
+command_id: 7A2.7AA.2210AE
+test_cases:
+- expected_values:
+    GR86_CPC_VALVE_DUTY_CYCLE: 0
+  response: 7AA046210AE00
+- expected_values:
+    GR86_CPC_VALVE_DUTY_CYCLE: 57.2549
+  response: 7AA046210AE92
+- expected_values:
+    GR86_CPC_VALVE_DUTY_CYCLE: 65.4902
+  response: 7AA046210AEA7
+- expected_values:
+    GR86_CPC_VALVE_DUTY_CYCLE: 87.05882
+  response: 7AA046210AEDE

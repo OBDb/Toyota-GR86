@@ -1,0 +1,14 @@
+command_id: 7A2.7AA.2210B4
+test_cases:
+- expected_values:
+    GR86_INTAKE_VVT_ADVANCE_RIGHT: 0
+  response: 7AA046210B432
+- expected_values:
+    GR86_INTAKE_VVT_ADVANCE_RIGHT: 5
+  response: 7AA046210B437
+- expected_values:
+    GR86_INTAKE_VVT_ADVANCE_RIGHT: 8
+  response: 7AA046210B43A
+- expected_values:
+    GR86_INTAKE_VVT_ADVANCE_RIGHT: 12
+  response: 7AA046210B43E

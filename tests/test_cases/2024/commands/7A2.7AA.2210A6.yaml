@@ -1,0 +1,11 @@
+command_id: 7A2.7AA.2210A6
+test_cases:
+- expected_values:
+    GR86_ACC_POS: 0
+  response: 7AA046210A600
+- expected_values:
+    GR86_ACC_POS: 9.41176
+  response: 7AA046210A618
+- expected_values:
+    GR86_ACC_POS: 14.90196
+  response: 7AA046210A626
