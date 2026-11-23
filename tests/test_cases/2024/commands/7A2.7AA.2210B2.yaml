@@ -4,6 +4,9 @@ test_cases:
     GR86_ALTERNATOR_DUTY: 44
   response: 7AA046210B22C
 - expected_values:
+    GR86_ALTERNATOR_DUTY: 71
+  response: 7AA046210B247
+- expected_values:
     GR86_ALTERNATOR_DUTY: 72
   response: 7AA046210B248
 - expected_values:

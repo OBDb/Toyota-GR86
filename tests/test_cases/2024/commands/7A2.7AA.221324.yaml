@@ -1,32 +1,8 @@
 command_id: 7A2.7AA.221324
 test_cases:
 - expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 98.3
-  response: 7AA0562132403D7
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 98.4
-  response: 7AA0562132403D8
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 98.6
-  response: 7AA0562132403DA
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 98.7
-  response: 7AA0562132403DB
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 98.9
-  response: 7AA0562132403DD
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 99.1
-  response: 7AA0562132403DF
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 99.2
-  response: 7AA0562132403E0
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 99.3
-  response: 7AA0562132403E1
-- expected_values:
-    GR86_REMAINING_BAT_CAPACITY: 99.6
-  response: 7AA0562132403E4
+    GR86_REMAINING_BAT_CAPACITY: 97.7
+  response: 7AA0562132403D1
 - expected_values:
     GR86_REMAINING_BAT_CAPACITY: 100
   response: 7AA0562132403E8

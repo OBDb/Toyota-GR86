@@ -4,6 +4,9 @@ test_cases:
     GR86_FL_VSS: 0
   response: 7B8056210250000
 - expected_values:
+    GR86_FL_VSS: 15.01875
+  response: 7B805621025010B
+- expected_values:
     GR86_FL_VSS: 47.8125
   response: 7B8056210250352
 - expected_values:
