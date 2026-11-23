@@ -4,8 +4,14 @@ test_cases:
     GR86_MAF_AVG: 3
   response: 7AA056212ED012C
 - expected_values:
+    GR86_MAF_AVG: 3.08
+  response: 7AA056212ED0134
+- expected_values:
     GR86_MAF_AVG: 3.67
   response: 7AA056212ED016F
+- expected_values:
+    GR86_MAF_AVG: 5.24
+  response: 7AA056212ED020C
 - expected_values:
     GR86_MAF_AVG: 9.18
   response: 7AA056212ED0396

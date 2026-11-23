@@ -10,5 +10,8 @@ test_cases:
     GR86_STEER_ANGLE_7B0: -8
   response: 7B805621029FFF8
 - expected_values:
+    GR86_STEER_ANGLE_7B0: -7
+  response: 7B805621029FFF9
+- expected_values:
     GR86_STEER_ANGLE_7B0: -1
   response: 7B805621029FFFF

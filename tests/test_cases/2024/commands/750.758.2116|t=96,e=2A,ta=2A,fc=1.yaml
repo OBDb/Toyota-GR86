@@ -25,6 +25,14 @@ test_cases:
     7582A100761163B3D3F
     7582A213A0000000000
 - expected_values:
+    GR86_TT_FL: 23
+    GR86_TT_FR: 23
+    GR86_TT_RL: 21
+    GR86_TT_RR: 20
+  response: |-
+    7582A100761163D3F3F
+    7582A213C0000000000
+- expected_values:
     GR86_TT_FL: 26
     GR86_TT_FR: 26
     GR86_TT_RL: 23

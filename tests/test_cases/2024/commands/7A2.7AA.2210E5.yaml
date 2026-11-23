@@ -18,3 +18,9 @@ test_cases:
 - expected_values:
     GR86_ODO_7A2_10E5: 18818
   response: 7AA056210E524C1
+- expected_values:
+    GR86_ODO_7A2_10E5: 18820
+  response: 7AA056210E524C2
+- expected_values:
+    GR86_ODO_7A2_10E5: 18828
+  response: 7AA056210E524C6

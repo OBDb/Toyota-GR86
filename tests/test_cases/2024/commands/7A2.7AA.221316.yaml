@@ -7,6 +7,12 @@ test_cases:
     GR86_MONITOR_3: 738.75
   response: 7AA056213160B8B
 - expected_values:
+    GR86_MONITOR_3: 887
+  response: 7AA056213160DDC
+- expected_values:
+    GR86_MONITOR_3: 1009.75
+  response: 7AA056213160FC7
+- expected_values:
     GR86_MONITOR_3: 1932.75
   response: 7AA056213161E33
 - expected_values:

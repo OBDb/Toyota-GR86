@@ -12,3 +12,6 @@ test_cases:
 - expected_values:
     GR86_A_F_SENSOR_1: 1.00671
   response: 7AA046210BE81
+- expected_values:
+    GR86_A_F_SENSOR_1: 1.01451
+  response: 7AA046210BE82

@@ -10,6 +10,9 @@ test_cases:
     GR86_EXHAUST_OCV_DUTY_RIGHT: 46.66667
   response: 7AA046210EE77
 - expected_values:
+    GR86_EXHAUST_OCV_DUTY_RIGHT: 47.05882
+  response: 7AA046210EE78
+- expected_values:
     GR86_EXHAUST_OCV_DUTY_RIGHT: 53.33333
   response: 7AA046210EE88
 - expected_values:
