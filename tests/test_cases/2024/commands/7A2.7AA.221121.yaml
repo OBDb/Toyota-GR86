@@ -1,0 +1,11 @@
+command_id: 7A2.7AA.221121
+test_cases:
+- expected_values:
+    GR86_TARGET_ENGINE_SPEED: 700
+  response: 7AA056211210AF0
+- expected_values:
+    GR86_TARGET_ENGINE_SPEED: 710.25
+  response: 7AA056211210B19
+- expected_values:
+    GR86_TARGET_ENGINE_SPEED: 716.25
+  response: 7AA056211210B31

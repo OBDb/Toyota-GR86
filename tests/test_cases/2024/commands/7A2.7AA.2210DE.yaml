@@ -1,0 +1,20 @@
+command_id: 7A2.7AA.2210DE
+test_cases:
+- expected_values:
+    GR86_THROTTLE_MOTOR_DUTY: -20.816
+  response: 7AA046210DE65
+- expected_values:
+    GR86_THROTTLE_MOTOR_DUTY: -17.68
+  response: 7AA046210DE69
+- expected_values:
+    GR86_THROTTLE_MOTOR_DUTY: -11.408
+  response: 7AA046210DE71
+- expected_values:
+    GR86_THROTTLE_MOTOR_DUTY: -9.056
+  response: 7AA046210DE74
+- expected_values:
+    GR86_THROTTLE_MOTOR_DUTY: -4.352
+  response: 7AA046210DE7A
+- expected_values:
+    GR86_THROTTLE_MOTOR_DUTY: 15.248
+  response: 7AA046210DE93

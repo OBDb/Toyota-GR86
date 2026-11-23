@@ -1,0 +1,17 @@
+command_id: 7A2.7AA.2210EF
+test_cases:
+- expected_values:
+    GR86_EXHAUST_OCV_DUTY_LEFT: 45.88235
+  response: 7AA046210EF75
+- expected_values:
+    GR86_EXHAUST_OCV_DUTY_LEFT: 46.66667
+  response: 7AA046210EF77
+- expected_values:
+    GR86_EXHAUST_OCV_DUTY_LEFT: 54.5098
+  response: 7AA046210EF8B
+- expected_values:
+    GR86_EXHAUST_OCV_DUTY_LEFT: 55.29412
+  response: 7AA046210EF8D
+- expected_values:
+    GR86_EXHAUST_OCV_DUTY_LEFT: 56.07843
+  response: 7AA046210EF8F

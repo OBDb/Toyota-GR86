@@ -1,0 +1,20 @@
+command_id: 7A2.7AA.2210E5
+test_cases:
+- expected_values:
+    GR86_ODO_7A2_10E5: 18776
+  response: 7AA056210E524AC
+- expected_values:
+    GR86_ODO_7A2_10E5: 18782
+  response: 7AA056210E524AF
+- expected_values:
+    GR86_ODO_7A2_10E5: 18784
+  response: 7AA056210E524B0
+- expected_values:
+    GR86_ODO_7A2_10E5: 18792
+  response: 7AA056210E524B4
+- expected_values:
+    GR86_ODO_7A2_10E5: 18806
+  response: 7AA056210E524BB
+- expected_values:
+    GR86_ODO_7A2_10E5: 18818
+  response: 7AA056210E524C1

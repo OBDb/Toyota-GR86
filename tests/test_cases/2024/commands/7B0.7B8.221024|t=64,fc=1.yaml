@@ -1,0 +1,17 @@
+command_id: 7B0.7B8.221024|t=64,fc=1
+test_cases:
+- expected_values:
+    GR86_FR_VSS: 0
+  response: 7B8056210240000
+- expected_values:
+    GR86_FR_VSS: 44.04375
+  response: 7B805621024030F
+- expected_values:
+    GR86_FR_VSS: 57.825
+  response: 7B8056210240404
+- expected_values:
+    GR86_FR_VSS: 77.11875
+  response: 7B805621024055B
+- expected_values:
+    GR86_FR_VSS: 87.46875
+  response: 7B8056210240613

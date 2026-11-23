@@ -1,0 +1,14 @@
+command_id: 7A2.7AA.2210BE
+test_cases:
+- expected_values:
+    GR86_A_F_SENSOR_1: 0.92867
+  response: 7AA046210BE77
+- expected_values:
+    GR86_A_F_SENSOR_1: 0.98329
+  response: 7AA046210BE7E
+- expected_values:
+    GR86_A_F_SENSOR_1: 0.9989
+  response: 7AA046210BE80
+- expected_values:
+    GR86_A_F_SENSOR_1: 1.00671
+  response: 7AA046210BE81

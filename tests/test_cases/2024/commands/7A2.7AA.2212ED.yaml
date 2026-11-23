@@ -1,0 +1,20 @@
+command_id: 7A2.7AA.2212ED
+test_cases:
+- expected_values:
+    GR86_MAF_AVG: 3
+  response: 7AA056212ED012C
+- expected_values:
+    GR86_MAF_AVG: 3.67
+  response: 7AA056212ED016F
+- expected_values:
+    GR86_MAF_AVG: 9.18
+  response: 7AA056212ED0396
+- expected_values:
+    GR86_MAF_AVG: 11.98
+  response: 7AA056212ED04AE
+- expected_values:
+    GR86_MAF_AVG: 13.93
+  response: 7AA056212ED0571
+- expected_values:
+    GR86_MAF_AVG: 108.75
+  response: 7AA056212ED2A7B

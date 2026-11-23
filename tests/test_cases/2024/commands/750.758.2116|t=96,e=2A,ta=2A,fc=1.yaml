@@ -1,0 +1,42 @@
+command_id: 750.758.2116|t=96,e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    GR86_TT_FL: 17
+    GR86_TT_FR: 17
+    GR86_TT_RL: 15
+    GR86_TT_RR: 15
+  response: |-
+    7582A10076116373939
+    7582A21370000000000
+- expected_values:
+    GR86_TT_FL: 19
+    GR86_TT_FR: 18
+    GR86_TT_RL: 16
+    GR86_TT_RR: 16
+  response: |-
+    7582A10076116383A3B
+    7582A21380000000000
+- expected_values:
+    GR86_TT_FL: 23
+    GR86_TT_FR: 21
+    GR86_TT_RL: 19
+    GR86_TT_RR: 18
+  response: |-
+    7582A100761163B3D3F
+    7582A213A0000000000
+- expected_values:
+    GR86_TT_FL: 26
+    GR86_TT_FR: 26
+    GR86_TT_RL: 23
+    GR86_TT_RR: 21
+  response: |-
+    7582A100761163F4242
+    7582A213D0000000000
+- expected_values:
+    GR86_TT_FL: 28
+    GR86_TT_FR: 27
+    GR86_TT_RL: 23
+    GR86_TT_RR: 22
+  response: |-
+    7582A100761163F4344
+    7582A213E0000000000

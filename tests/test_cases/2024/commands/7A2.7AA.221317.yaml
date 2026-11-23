@@ -1,0 +1,20 @@
+command_id: 7A2.7AA.221317
+test_cases:
+- expected_values:
+    GR86_MONITOR_4: 706.75
+  response: 7AA056213170B0B
+- expected_values:
+    GR86_MONITOR_4: 745.25
+  response: 7AA056213170BA5
+- expected_values:
+    GR86_MONITOR_4: 1961.25
+  response: 7AA056213171EA5
+- expected_values:
+    GR86_MONITOR_4: 1989
+  response: 7AA056213171F14
+- expected_values:
+    GR86_MONITOR_4: 1989.75
+  response: 7AA056213171F17
+- expected_values:
+    GR86_MONITOR_4: 1991.75
+  response: 7AA056213171F1F
