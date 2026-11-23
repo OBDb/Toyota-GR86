@@ -1,4 +1,8 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7A2", "type": "engine" },
+    { "hdr": "7E0", "type": "engine" }
+  ],
+  "commands": [
 { "hdr": "746", "dbg": true, "cmd": {"22": "1032"}, "freq": 0.25,
   "signals": [
     {"id": "GR86_STEER_ANGLE_746", "path": "Control", "fmt": { "len": 8, "max": 635, "min": -640, "mul": 5, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle, v2"}
